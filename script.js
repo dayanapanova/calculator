@@ -9,7 +9,9 @@ function clearScreen() {
 
 function solve() {
   let output = document.getElementById('output').value;
-  let result = eval(output);
-  document.getElementById('output').value = result;
-  return result;
+  if (output) {
+    let result = eval(output);
+    document.getElementById('output').value = result;
+    return result;
+  }
 }
