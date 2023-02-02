@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator-output">
+        <input id="output" />
+      </div>
+
+      <div class="row">
+        <button class="col" value="+" onclick="display(value)">+</button>
+        <button class="col" value="-" onclick="display(value)">-</button>
+        <button class="col" value="*" onclick="display(value)">*</button>
+        <button class="col" value="/" onclick="display(value)">/</button>
+      </div>
+
+      <div class="row">
+        <div class="buttons-holder">
+          <button class="col-button" value="7" onclick="display(value)">
+            7
+          </button>
+          <button class="col-button" value="8" onclick="display(value)">
+            8
+          </button>
+          <button class="col-button" value="9" onclick="display(value)">
+            9
+          </button>
+          <button class="col-button" value="4" onclick="display(value)">
+            4
+          </button>
+          <button class="col-button" value="5" onclick="display(value)">
+            5
+          </button>
+          <button class="col-button" value="6" onclick="display(value)">
+            6
+          </button>
+          <button class="col-button" value="1" onclick="display(value)">
+            1
+          </button>
+          <button class="col-button" value="2" onclick="display(value)">
+            2
+          </button>
+          <button class="col-button" value="3" onclick="display(value)">
+            3
+          </button>
+          <button class="half-col-button" value="0" onclick="display(value)">
+            0
+          </button>
+          <button class="half-col-button" onclick="clearScreen()">C</button>
+          <button
+            class="half-col-button"
+            style="border-bottom-left-radius: 20px"
+            value="("
+            onclick="display(value)"
+          >
+            (
+          </button>
+          <button class="half-col-button" value=")" onclick="display(value)">
+            )
+          </button>
+        </div>
+
+        <button class="equal-button" value="=" onclick="solve(value)">=</button>
+      </div>
+    </div>
+  </body>
+</html>
