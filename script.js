@@ -15,3 +15,9 @@ function solve() {
     return result;
   }
 }
+
+module.exports = Calculator = {
+  display,
+  clearScreen,
+  solve,
+};
