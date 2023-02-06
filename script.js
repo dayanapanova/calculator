@@ -10,9 +10,16 @@ function clearScreen() {
 function solve() {
   let output = document.getElementById('output').value;
   if (output) {
-    let result = eval(output);
-    document.getElementById('output').value = result;
-    return result;
+    // This checks if any output is entered.
+    try {
+      let result = eval(output);
+      document.getElementById('output').value = result;
+      return result;
+    } catch {
+      // This will throw an error if invalid operation is entered.
+      alert('Please enter a valid operation');
+      clearScreen();
+    }
   }
 }
 
