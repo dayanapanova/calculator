@@ -19,6 +19,7 @@ function solve() {
       // This will throw an error if invalid operation is entered.
       alert('Please enter a valid operation');
       clearScreen();
+      return false;
     }
   }
 }

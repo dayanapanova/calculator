@@ -16,4 +16,8 @@ describe('Tesing calculator display method', () => {
   test('Expect `1 + 1 / 2` input to be equal `1 + 1 / 2` output', () => {
     expect(Calculator.display('1 + 1 / 2')).toBe('1 + 1 / 2');
   });
+
+  test('Expect `1 + 1 / 2` input to be equal `1 + 1 / 2` output', () => {
+    expect(Calculator.display('1 + 1 < 2')).toBe('1 + 1 < 2');
+  });
 });
